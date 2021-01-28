@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+}
+
+nav {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 16px 20px;
+    text-decoration: none;
+    color:  #8a8d96;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: #272727;
+}
+
+/* Фигуры */
+.first_art, 
+.second_art, 
+.third_art {
+    position: absolute;
+    top: 120px;
+    margin-left: 25%;
+}
+
+.first_art {
+    width: 1024px;
+    height: 576px;
+    
+}
+
+.second_art {
+    width: 1024px;
+    height: 576px;
+    
+    
+}
+
+.third_art {
+    width: 1024px;
+    height: 576px;
+    
+    
+}
+
+
+
+.switch-transition {
+    transition: all .5s ease-in-out;
+}
+
+.switch-enter {
+    left: 100%;
+}
+
+.switch-leave {
+    left: -100%;
+}

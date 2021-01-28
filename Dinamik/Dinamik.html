@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Fox's Pot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="app">
+        <header>
+            <nav>
+                <a href="#" @click="switchView('first_art')">First art</a>
+                <a href="#" @click="switchView('second_art')">Second art</a>
+                <a href="#" @click="switchView('third_art')">Third art</a>
+            </nav>
+        </header>
+        
+        <component :is="currentView" transition="switch"></component>
+    </div>
+
+    <template id="first_art_template">
+        <img class="first_art" src="https://gamespot1.cbsistatic.com/uploads/screen_kubrick/1593/15930215/3723613-3834184743-.png" alt="">
+    </template>
+
+    <template id="second_art_template">
+        <img class="second_art" src="https://websoftex.ru/wp-content/uploads/2019/10/detalnyj-obzor-call-of-duty-modern-warfare-2019.jpg" alt="">
+    </template>
+
+    <template id="third_art_template">
+        <img class="third_art" src="https://images.pushsquare.com/news/2018/03/call_of_duty_modern_warfare_2_remastered_ditches_multiplayer/attachment/0/large.jpg" alt="">
+    </template>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
